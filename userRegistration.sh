@@ -27,3 +27,12 @@ then
 else
         echo "Please enter a valid email address"
 fi
+
+
+read -p "Enter mobile format:" num
+if [[ "$num" =~ (^[+][9][1]){0,1}([7-9]{1})([0-9]{9})$ ]]
+then
+        echo "Valid mobile format"
+else
+        echo "Invalid mobile format"
+fi
