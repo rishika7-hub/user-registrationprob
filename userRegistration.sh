@@ -36,3 +36,11 @@ then
 else
         echo "Invalid mobile format"
 fi
+
+read -p "Enter password:" pass
+if [[ "$pass" =~ ([A-Z]{1}[a-z]{2,9}) ]]
+then
+        echo "valid"
+else
+        echo "invalid"
+fi
