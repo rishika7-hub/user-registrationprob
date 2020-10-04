@@ -38,7 +38,7 @@ else
 fi
 
 read -p "Enter password:" pass
-if [[ "$pass" =~ ([A-Z]{1}[a-z]{2,9}) ]]
+if [[ "$pass" =~ ([A-Z]{1}[a-z]{2,9})([0-9]{1}) ]]
 then
         echo "valid"
 else
