@@ -12,8 +12,7 @@ echo "Invalid first name"
 fi
 
 read -p "Enter the last name:" lname
-pat="([A-Z][a-z]*)*{3,}"
-
+pat="([A-Z][a-z]*)*"
 if [[ $lname =~ $pat ]]
 then
 echo "Valid last name"
